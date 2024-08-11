@@ -86,7 +86,7 @@ class ElevenLabsClient:
             headers=headers,
             data=json_str,
             params=params,
-            timeout=httpx.Timeout(60),
+            timeout=httpx.Timeout(120),
         )
         response.raise_for_status()
         return response
